@@ -29,23 +29,23 @@ export default function SearchFilter() {
     setFilterVal(e.target.value);
   };
   return (
-    <div>
-      <div>
-        <input className="searchinput" placeholder="Ara" value={filterVal} onInput={(e) => handleFilter(e)} />
-      </div>
+    <>
+      <input className="searchinput" placeholder="Ara" value={filterVal} onInput={(e) => handleFilter(e)} />
 
-      <Card>
-        {' '}
-        {Object.keys(data).map((item) => {
-          return (
-            <div>
-              <Card>{item.name}</Card>
-              <Card>{item.description}</Card>;
-            </div>
-          );
-        })}
-      </Card>
-    </div>
+      {/* <div>
+        <Card>
+          {' '}
+          {Object.keys(data).map((item) => {
+            return (
+              <div>
+                <Card>{item.name}</Card>
+                <Card>{item.description}</Card>;
+              </div>
+            );
+          })}
+        </Card>
+      </div> */}
+    </>
   );
 
   // const [filterText, setFilterText] = useState('');

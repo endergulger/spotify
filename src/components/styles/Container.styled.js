@@ -13,8 +13,12 @@ export const ContainerStyled = styled.div`
     color: white;
     margin-bottom: 100px;
     margin-left: 90px;
-    .MuiButtonBase-root {
+
+    .profilebtn {
+      float: right;
+      margin-right: 6%;
     }
+
     .iconclass {
       margin-top: 20px;
     }
@@ -24,7 +28,6 @@ export const ContainerStyled = styled.div`
       opacity: 0.15;
       border-radius: 18px;
       margin-top: 10px;
-      margin-left: 50px;
     }
     .iconbtnprofile {
       margin-left: 840px;

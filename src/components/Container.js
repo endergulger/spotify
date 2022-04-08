@@ -19,10 +19,10 @@ export default function Container() {
           <IconButton className="iconbtnright">
             <Right />
           </IconButton>
-          <IconButton className="iconbtnprofile">
+          <IconButton className="iconbtnprofile profilebtn">
             <Profile />
           </IconButton>
-          {/* <input className="searchinput" placeholder="Ara" /> */}
+
           <SearchFilter />
         </div>
       </div>

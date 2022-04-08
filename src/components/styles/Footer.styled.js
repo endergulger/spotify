@@ -11,16 +11,22 @@ export const FooterStyled = styled.div`
     padding: 20px;
     display: flex;
     align-items: center;
+    .playerbtn {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
     .playerfull {
-      margin-left: 500px;
-      .top-player {
-        display: flex;
-        justify-content: space-evenly;
-      }
+      text-align: -webkit-center;
+    }
+    .top-player {
+      display: flex;
+      width: 30%;
+      justify-content: space-evenly;
+
       .player {
       }
       .skipback {
-        margin-left: 250px;
         margin-top: 10px;
       }
       .skip {
