@@ -13,15 +13,18 @@ export const FooterStyled = styled.div`
     align-items: center;
     .playerfull {
       margin-left: 500px;
-      .player {
+      .top-player {
         display: flex;
+        justify-content: space-evenly;
+      }
+      .player {
       }
       .skipback {
         margin-left: 250px;
-      }
-      .play {
+        margin-top: 10px;
       }
       .skip {
+        margin-top: 10px;
       }
     }
   }

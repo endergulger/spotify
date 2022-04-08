@@ -19,12 +19,11 @@ export default function Container() {
           <IconButton className="iconbtnright">
             <Right />
           </IconButton>
-          <input className="searchinput" placeholder="Ara" />
-          {/* <SearchFilter /> */}
-
           <IconButton className="iconbtnprofile">
             <Profile />
           </IconButton>
+          {/* <input className="searchinput" placeholder="Ara" /> */}
+          <SearchFilter />
         </div>
       </div>
       <h1>Yakında Çalanlar</h1>

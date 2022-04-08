@@ -11,9 +11,11 @@ export default function Footer() {
       <div className="music">
         <Music />
         <div className="playerfull">
-          <SkipBack className="skipback" />
-          <Skip className="skip" />
-          <Play className="play" />
+          <div className="top-player">
+            <SkipBack className="skipback" />
+            <Play className="play" />
+            <Skip className="skip" />
+          </div>
           <div className="player">
             <Player />
           </div>
