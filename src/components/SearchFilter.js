@@ -18,22 +18,38 @@ export default function SearchFilter() {
     };
     fetchData();
   }, []);
-  const handleFilter = (e) => {
-    if (e.target.value === '') {
-      setData(searchApiData);
-    } else {
-      const filterResult = searchApiData.filter((item) => item.name.toLowerCase().includes(e.target.value.toLowerCase()));
 
-      setData(filterResult);
-    }
-    setFilterVal(e.target.value);
-  };
+  // getValueInput (event) {
+  //   const inputValue = event.target.value;
+  //   this.setState({ input: inputValue });
+  //   this.filterNames(inputValue);
+  // }
+
+  // filterNames (inputValue) {
+  //   const { data } = this.state;
+  //   this.setState({
+  //     filtered: data.filter(item =>
+  //        item.name.includes(inputValue))
+  //   });
+  // }
+
+  // const handleFilter = (e) => {
+  //   if (e.target.value === '') {
+  //     setData(searchApiData);
+  //   } else {
+  //     const filterResult = searchApiData.filter((item) => item.name.toLowerCase().includes(e.target.value.toLowerCase()));
+
+  //     setData(filterResult);
+  //   }
+  //   setFilterVal(e.target.value);
+  // };
   return (
     <>
-      <input className="searchinput" placeholder="Ara" value={filterVal} onInput={(e) => handleFilter(e)} />
+      <input className="searchinput" placeholder="Ara" onChange={this.getValueInput} />
+      {/* <input className="searchinput" placeholder="Ara" value={filterVal} onChange={console.log('asdsad')} onInput={(e) => handleFilter(e.target.value)} /> */}
 
-      {/* <div>
-        <Card>
+      <div>
+        {/* <Card>
           {' '}
           {Object.keys(data).map((item) => {
             return (
@@ -43,8 +59,8 @@ export default function SearchFilter() {
               </div>
             );
           })}
-        </Card>
-      </div> */}
+        </Card> */}
+      </div>
     </>
   );
 

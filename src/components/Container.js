@@ -6,7 +6,7 @@ import { ReactComponent as Right } from '../Svg/Right.svg';
 import { ReactComponent as Profile } from '../Svg/Profile.svg';
 import GetRecentlyPlayed from './GetRecentlyPlayed';
 import GetRecommended from './GetRecommended';
-import SearchFilter from './SearchFilter';
+import SearchFilters2 from './SearchFilters2';
 
 export default function Container() {
   return (
@@ -23,7 +23,7 @@ export default function Container() {
             <Profile />
           </IconButton>
 
-          <SearchFilter />
+          {/* <SearchFilters2 /> */}
         </div>
       </div>
       <h1>Yakında Çalanlar</h1>
